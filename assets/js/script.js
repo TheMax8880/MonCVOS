@@ -38,30 +38,34 @@ window.onload = function () {
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//       document.querySelector('nav').style.padding = '1%';
-//       document.querySelector('nav').style.height = '10vh';
-//       document.querySelector('nav ul').style.fontSize = '1rem';
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.querySelector('nav').style.padding = '1%';
+      //document.querySelector('nav').style.height = '10vh';
+      document.querySelector('nav ul').style.fontSize = '1rem';
       
-//     } else {
-//         document.querySelector('nav').style.padding = '3%';
-//         document.querySelector('nav').style.height = '18vh';
-//         document.querySelector('nav ul').style.fontSize = '1.4rem';
-//     }
+    } else {
+        document.querySelector('nav').style.padding = '3%';
+        //document.querySelector('nav').style.height = '18vh';
+        document.querySelector('nav ul').style.fontSize = '1.4rem';
+    }
 
-//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-//         document.querySelector('nav').style.display = 'none';
-//         document.getElementById("myBtn").style.display = "block";
-//         document.querySelector('.scroll-down').style.display='none'
+  //   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  //       //document.querySelector('nav').style.display = 'none';
+  //       //document.getElementById("myBtn").style.display = "block";
+  //       //document.querySelector('.scroll-down').style.display='none'
         
-//       } else {
-//         document.querySelector('nav').style.display = 'inherit';
-//         document.getElementById("myBtn").style.display = 'none';
-//         document.querySelector('.scroll-down').style.display='block'
-//       }
-//   }
+  //     } else {
+  //       //document.querySelector('nav').style.display = 'block';
+  //       //document.getElementById("myBtn").style.display = 'none';
+  //       //document.querySelector('.scroll-down').style.display='block'
+  //     }
+}
 
+
+  
+  
+  
   // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Safari

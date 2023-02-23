@@ -18,39 +18,6 @@
 </head>
 
 <body>
-    <!-- <main>
-        <div class="description panel blue">
-            <div><h1>Layered pinning</h1>
-              <p>Use pinning to layer panels on top of each other as you scroll.</p>
-              <div class="scroll-down">Scroll down<div class="arrow"></div></div>
-            </div>
-          </div>
-          
-          
-          <section class="panel red">
-              ONE
-          </section>
-          <section class="panel orange">
-              TWO
-          </section>
-          <section class="panel purple">
-              THREE
-          </section>
-          <section class="panel green">
-              FOUR
-          </section>
-          
-          
-          
-          
-          
-          <header>
-             <a href="https://greensock.com/scrolltrigger">
-               <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
-            </a> 
-          </header>
-    </main> -->
-
     <main>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 
@@ -68,32 +35,36 @@
 
         <header id="helloWorld" class="panel" aria-label="Menu principal">
             <div>
-                <h1 data-aos="fade-in"> Maxime Trouvillers</h1>
+                <h1 data-aos="fade-in" data-aos-delay="150"> Maxime Trouvillers</h1>
                 <div>
-                    <h2 data-aos="fade-in" data-aos-delay="150">Bonjour&nbsp;!</h2>
-                    <!-- <p data-aos="fade-in" data-aos-delay="300">Bienvenue sur mon CV numérique&nbsp;!</p> -->
+                    <h2 data-aos="fade-in" data-aos-delay="300">Bonjour&nbsp;!</h2>
 
                 </div>
             </div>
         </header>
 
-        <section class="panel sect1">
-            <p>Bonjour</p>
-        </section>
-        <section class="panel sect2">
+        <section class="panel sect1" data-aos="fade-in" data-aos-delay="150">
             <p>Bienvenue sur mon CV numérique !</p>
         </section>
-        <section class="panel sect3">
-            <p>Vous pouvez scroller vers le bas pour commencer la visite</p>
+        <section class="panel sect2" data-aos="fade-in" data-aos-delay="150">
+            <p>Pour commencer la visite,</p>
+            <p>Scrollez vers le bas</p>
+            <div class="scroll-down"></div>
         </section>
-        <section class="panel sect4">
-            <p>Ou alors, accéder directement aux catégorie vers le menu.</p>
+        <section class="panel sect3" data-aos="fade-in" data-aos-delay="150">
+            <p>Ou alors, accédez directement aux catégories vers le menu.</p>
+            <div class="scroll-up"></div>
         </section>
-        <section class="panel sect5">
-            <p>Je suis Maxime</p>
+        <section class="panel sect4" data-aos="fade-in" data-aos-delay="150">
+            <p>Vous êtes prêts&nbsp;?</p>
+            <p>C'est parti&nbsp;!</p>
+            
         </section>
-        <section class="panel sect6">
+        <section class="panel sect5" data-aos="fade-in" data-aos-delay="150">
             <p>Je suis UI & Motion Designer Junior</p>
+        </section>
+        <section class="panel sect6" data-aos="fade-in" data-aos-delay="150">
+            <p>Et je suis à la recherche d'un job&nbsp;!</p>
         </section>
 
 
@@ -101,9 +72,9 @@
 
         <!-- <a href="#myCanvasContainer">
             <div class="scroll-down"></div>
-        </a>
+        </a> -->
 
-
+        <!--
         <div id="myCanvasContainer">
             <canvas width="1500" height="700" id="myCanvas">
                 <p>Anything in here will be replaced on browsers that support the canvas element</p>

@@ -16,15 +16,15 @@ html {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
 h2 {
-    font-size: 4rem;
-    font-weight: 500;
+    font-size: 13rem;
+    font-weight: 700;
     line-height: 2;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -57,6 +57,7 @@ nav {
     padding: 3%;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
 nav ul {
@@ -70,36 +71,54 @@ nav ul {
 #helloWorld div:first-child{
     height: 80vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 section.panel {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
+    height: 100vh;
+    font-size: 10rem;
 }
 
 /* .sect1 {
     background-color: indigo;
-}
+} */
 .sect2 {
-    background-color: greenyellow;
+    flex-direction: column;
+}
+
+.sect2 .scroll-down {
+    width: 100px;
+    height: 100px;
+    left: 47%;
+    bottom: 10%;
+}
+
+.sect3 .scroll-up {
+    width: 100px;
+    height: 100px;
+    left: 47%;
 }
 .sect3 {
-    background-color: goldenrod;
+    flex-direction: column;
 }
 .sect4 {
-    background-color: blue;
+    flex-direction: column;
 }
 .sect5 {
-    background-color: plum;
+    flex-direction: column;
 }
 .sect6 {
-    background-color: mediumvioletred;
-} */
+    flex-direction: column;
+}
 
 
 .panel p {
@@ -147,6 +166,81 @@ section.panel {
 #myBtn:hover {
     background-color: #c1c1c1;
     /* Add a dark-grey background on hover */
+}
+
+/* =================== PC : FLECHE SCROLL UP =================== */
+.scroll-up {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(225deg);
+    -moz-transform: translate(-50%, 0%) rotate(225deg);
+    transform: translate(-50%, 0%) rotate(225deg);
+    -webkit-animation: fade_move_up 4s ease-in-out infinite;
+    -moz-animation: fade_move_up 4s ease-in-out infinite;
+    animation: fade_move_up 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_up {
+    0% {
+        -webkit-transform: translate(0, 10px) rotate(225deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, -10px) rotate(225deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_up {
+    0% {
+        -moz-transform: translate(0, 10px) rotate(225deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: translate(0, -10px) rotate(225deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_up {
+    0% {
+        transform: translate(0, 10px) rotate(225deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, -10px) rotate(225deg);
+        opacity: 0;
+    }
 }
 
 /* =================== PC : FLECHE SCROLL DOWN =================== */
