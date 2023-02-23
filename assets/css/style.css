@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+
+/* =================== PC : GENERAL =================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-stretch: expanded;
+    background-color: #000;
+    background: linear-gradient(to right, #0f0c29, #090979, #020024);
+    color: #ddd;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 2;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#helloWorld p {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+a {
+    color: #c1c1c1;
+    text-decoration: none;
+}
+
+a:hover {
+    transition-duration: 1s;
+    transition-property: color;
+    color: #00ace9;
+    font-weight: 700;
+}
+
+nav {
+    height: 18vh;
+    transition: 0.8s;
+    background: linear-gradient(to right, #0f0c29, #090979, #020024);
+    padding: 3%;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    transition: 0.8s;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#helloWorld div:first-child{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.panel {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f0c29, #090979, #020024);
+}
+
+/* .sect1 {
+    background-color: indigo;
+}
+.sect2 {
+    background-color: greenyellow;
+}
+.sect3 {
+    background-color: goldenrod;
+}
+.sect4 {
+    background-color: blue;
+}
+.sect5 {
+    background-color: plum;
+}
+.sect6 {
+    background-color: mediumvioletred;
+} */
+
+
+.panel p {
+    font-size: 4rem;
+}
+
+/* =================== PC : CANVAS =================== */
+#myCanvasContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* =================== PC : BOUTON BACK TO TOP =================== */
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 50px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: solid black 1px;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #00ace9;
+    /* Set a background color */
+    color: #fff;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #c1c1c1;
+    /* Add a dark-grey background on hover */
+}
+
+/* =================== PC : FLECHE SCROLL DOWN =================== */
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation: fade_move_down 4s ease-in-out infinite;
+    animation: fade_move_down 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade_move_down {
+    0% {
+        -moz-transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -moz-transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fade_move_down {
+    0% {
+        transform: translate(0, -10px) rotate(45deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 10px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+
+/* @media screen and (min-width: 1280px) and (max-width: 1600px){
+
+} */
+@media screen and (min-width: 1601px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    #helloWorld p {
+        font-size: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #myCanvasContainer {
+        position: unset;
+    }
+}
