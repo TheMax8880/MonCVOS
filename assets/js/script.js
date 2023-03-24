@@ -41,25 +41,14 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       document.querySelector('nav').style.padding = '1%';
-      //document.querySelector('nav').style.height = '10vh';
+      // document.querySelector('nav').style.height = '10vh';
       document.querySelector('nav ul').style.fontSize = '1rem';
       
     } else {
         document.querySelector('nav').style.padding = '3%';
-        //document.querySelector('nav').style.height = '18vh';
+        // document.querySelector('nav').style.height = '18vh';
         document.querySelector('nav ul').style.fontSize = '1.4rem';
     }
-
-  //   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-  //       //document.querySelector('nav').style.display = 'none';
-  //       //document.getElementById("myBtn").style.display = "block";
-  //       //document.querySelector('.scroll-down').style.display='none'
-        
-  //     } else {
-  //       //document.querySelector('nav').style.display = 'block';
-  //       //document.getElementById("myBtn").style.display = 'none';
-  //       //document.querySelector('.scroll-down').style.display='block'
-  //     }
 }
 
 
@@ -85,8 +74,10 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
 
 
 ScrollTrigger.create({
-  snap: 1 / 6 // snap whole page to the closest section!
+  snap: 1 / 7 // snap whole page to the closest section!
 });
+
+
 
 
 

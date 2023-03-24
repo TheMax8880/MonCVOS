@@ -53,7 +53,6 @@ a:hover {
 nav {
     height: 18vh;
     transition: 0.8s;
-    background: linear-gradient(to right, #0f0c29, #090979, #020024);
     padding: 3%;
     position: sticky;
     top: 0;
@@ -108,16 +107,16 @@ section.panel {
     left: 47%;
 }
 .sect3 {
-    flex-direction: column;
+    background-color: crimson;
 }
 .sect4 {
-    flex-direction: column;
+    background-color: teal;
 }
 .sect5 {
-    flex-direction: column;
+    background-color: hotpink;
 }
 .sect6 {
-    flex-direction: column;
+    background-color: darkolivegreen;
 }
 
 
