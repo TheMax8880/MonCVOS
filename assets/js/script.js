@@ -69,7 +69,7 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
   ScrollTrigger.create({
     trigger: panel,
     start: "top top", 
-    pin: true, 
+    pin: false, 
     pinSpacing: false 
   });
 });
@@ -149,6 +149,7 @@ function pathEase(path, axis="y", precision=1) {
 			return s + (a[Math.ceil(i)] - s) * (i % 1);
 		}
 	}
+
 
 
 

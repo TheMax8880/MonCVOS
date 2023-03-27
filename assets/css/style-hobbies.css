@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
 
-
-
-
 /* =================== PC : GENERAL =================== */
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,13 +33,7 @@ h2 {
     margin-right: 3rem;
 }
 
-#helloWorld p {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
+
 
 a {
     color: #c1c1c1;
@@ -79,60 +73,7 @@ nav ul {
     padding-right: 5%;
 }
 
-section.panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 10% 0 10%;
 
-    background: linear-gradient(to right, #0f0c29, #090979, #020024);
-    height: 100vh;
-    font-size: 10rem;
-}
-
-/* .sect1 {
-    background-color: indigo;
-} */
-.sect2 {
-    flex-direction: column;
-}
-
-.sect2 .scroll-down {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-    bottom: 10%;
-}
-
-.sect3 .scroll-up {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-}
-
-.sect3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sect4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sect5 {
-    background-color: hotpink;
-}
-
-.sect6 {
-    background-color: darkolivegreen;
-}
-
-
-.panel p {
-    font-size: 7rem;
-    text-align: center;
-}
 
 /* =================== PC : CANVAS =================== */
 #myCanvasContainer {

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
 
-
-
-
 /* =================== PC : GENERAL =================== */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -33,13 +32,7 @@ h2 {
     margin-right: 3rem;
 }
 
-#helloWorld p {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
+
 
 a {
     color: #c1c1c1;
@@ -70,77 +63,222 @@ nav ul {
     font-size: 1.4rem;
 }
 
-#helloWorld div:first-child {
-    height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+/* =================== Ligne SVG =================== */
+svg#svg {
+  max-width: 600px;
+  overflow: visible;
+  margin-top: 60vh;
+}
+
+.ball {
+  fill: white;
+  visibility: hidden;
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+}
+text {
+  fill: white;
+  font-size: 15px;
+
+  visibility: hidden;
+}
+
+text.text0a{
+    font-size: 25px;
+    fill: #00ace9;
+}
+
+text.text0b{
+    font-size: 25px;
+    fill: #ddd;
+    display: block;
+}
+text.text01:nth-child(3) {
+    font-size: 10px;
+    fill: #ddd;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: fade 2s ease-in-out infinite;
+    -moz-animation: fade 2s ease-in-out infinite;
+    animation: fade 2s ease-in-out infinite;
+}
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 0.5 }
+  }
+  @-webkit-keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 0.5 }
+  }
+  @-moz-keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 0.5 }
+  }
+
+
+/* =================== Formations.html =================== */
+
+
+#sect-formation{
     padding-left: 5%;
     padding-right: 5%;
+    /* display: flex;
+    justify-content: center; */
+    /* background-color: brown; */
 }
 
-section.panel {
+#formations{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 10% 0 10%;
+    flex-direction: column;
+}
 
+
+h4 {
+    font-size: 4rem;
+}
+
+#list-cdui li{
+    font-size: 2rem;
+}
+
+#forms{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.modal {
+    display: none;
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
-    height: 100vh;
-    font-size: 10rem;
-}
-
-/* .sect1 {
-    background-color: indigo;
-} */
-.sect2 {
-    flex-direction: column;
-}
-
-.sect2 .scroll-down {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-    bottom: 10%;
-}
-
-.sect3 .scroll-up {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-}
-
-.sect3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sect4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sect5 {
-    background-color: hotpink;
-}
-
-.sect6 {
-    background-color: darkolivegreen;
-}
-
-
-.panel p {
-    font-size: 7rem;
+    box-shadow: 0px 1px 12px #00ace9;
+    border-radius: 10px;
+    padding: 20px 30px;
     text-align: center;
+    width: 95%;
+    position: fixed;
+    /* position de la fenetre au centre de l'écran */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* position au dessus des autres éléments de la page */
+    z-index: 1;
+    animation: fadeinmodal 1s; 
+    -moz-animation: fadeinmodal 1s; /* Firefox */
+    -webkit-animation: fadeinmodal 1s; /* Safari et Chrome */
+    -o-animation: fadeinmodal 1s; /* Opera */
+
+}
+@keyframes fadeinmodal {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeinmodal { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadeinmodal { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeinmodal { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    
+
+/* #cduiModal p, #cduiModal li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1%;
+} */
+
+#cmModal li,
+#cduiModal li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 1%;
+}
+#cmModal ul,
+#cduiModal ul {
+    margin: 3%;
 }
 
-/* =================== PC : CANVAS =================== */
-#myCanvasContainer {
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    left: 0;
+.modal p strong {
+    font-size: 1.5rem;
+    color: aqua;
 }
+
+.modal h4 {
+    color: #00ace9;
+    font-size: 4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+span.closeModal {
+    color: #AAAAAA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: default;
+}
+
+div.spacer{
+    height: 40vh;
+}
+button.closeModal {
+    background-color: #00ace9; /* Green */
+    font-family: 'Raleway', sans-serif; 
+    border: none;
+    color: #ddd;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #ddd; 
+    color: #222; 
+    border: 2px solid #00ace9;
+    border-radius: 20px;
+    margin: 3% 0 3% 0;
+  }
+  
+  button.closeModal:hover {
+    background-color: #00ace9;
+    color: #ddd;
+  }
+
+
+
+
+
+
+
 
 /* =================== PC : BOUTON BACK TO TOP =================== */
 
