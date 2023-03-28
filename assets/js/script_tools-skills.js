@@ -1,8 +1,9 @@
 ScrollReveal().reveal('div.column img', {
     interval: 100,
-    reset: true,
+    // reset: true,
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
+
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
@@ -20,4 +21,10 @@ function scrollFunction() {
         document.querySelector('nav ul').style.fontSize = '1.4rem';
         document.getElementById("myBtn").style.display = "none";
     }
+}
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

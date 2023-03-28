@@ -15,10 +15,11 @@ html {
 html {
     font-family: 'Raleway', sans-serif;
     font-stretch: expanded;
-    background-color: #000;
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
     color: #ddd;
 }
+
+
 
 h1 {
     font-size: 2.5rem;
@@ -35,13 +36,7 @@ h2 {
     margin-right: 3rem;
 }
 
-#helloWorld p {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
+
 
 a {
     color: #c1c1c1;
@@ -72,80 +67,21 @@ nav ul {
     font-size: 1.4rem;
 }
 
-#helloWorld div:first-child {
-    height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-section.panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 10% 0 10%;
-
-    background: linear-gradient(to right, #0f0c29, #090979, #020024);
-    height: 100vh;
-    font-size: 10rem;
-}
-
-/* .sect1 {
-    background-color: indigo;
-} */
-.sect2 {
-    flex-direction: column;
-}
-
-.sect2 .scroll-down {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-    bottom: 10%;
-}
-
-.sect3 .scroll-up {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-}
-
-.sect3 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sect4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.sect5 {
-    background-color: hotpink;
-}
-
-.sect6 {
-    background-color: darkolivegreen;
-}
 
 
-.panel p {
-    font-size: 7rem;
-    text-align: center;
-}
+
 
 /* ----------------------- GALLERY - Desktop ------------------------ */
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
+    font-size: 3rem;
+    /* border-bottom: 1px dotted black; */
   }
 
 span.tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 50vw;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -155,44 +91,71 @@ span.tooltiptext {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
+    /* width: 120px; */
+    /* top: 100%; */
+    /* left: 50%; */
+    /*margin-left: -60px;  Use half of the width (120/2 = 60), to center the tooltip */
   }
 
-  .tooltip:hover + span.tooltiptext {
+  div.column1 span.tooltiptext {
+    background-color: #00ace9;
+    top: 20vh;
+    left: 100%; 
+  }
+  div.column2 span.tooltiptext {
+    background-color: #00ace9;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+  div.column3 span.tooltiptext {
+    background-color: #00ace9;
+    top: 20vh;
+    right: 100%; 
+  }
+
+
+  .tooltip:hover span.tooltiptext {
     visibility: visible;
   }
+
+
   #tool-and-skills-tab {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 3%;
     background-color: #0f0c29;
-    height: 95vh;
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-
+   
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create 3 equal columns that sits next to each other */
 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: calc(100%/3);
     max-width: calc(100%/3);
     padding: 0 4px;
-    margin: auto;
+    /* background-color: #00ace9; */
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 10vw;
-    height: auto;
-}
+
 
 div.column img {
     visibility: hidden;
+    margin: 30px;
+    width: 20vw;
+    height: auto;
+}
+
+div.column img:hover {
+    transition-duration: 0.5s;
+    width: 23vw;
 }
 
 img.background-on {
