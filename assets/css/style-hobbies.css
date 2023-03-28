@@ -18,21 +18,50 @@ html {
     color: #ddd;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    margin-left: 3rem;
-    margin-right: 3rem;
+header {
+    height: 100vh;
 }
 
 h2 {
-    font-size: 13rem;
+    font-size: 25rem;
     font-weight: 700;
-    line-height: 2;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 0 3rem 0 3rem;
+    text-align: center;
 }
 
+h2:before {
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    height: 0;
+    width: 50vw;
+    content: '';
+    border-top: 5px solid #00ace9;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+h2:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+h2:after {
+    position: absolute;
+    right: 0;
+    top: 1.5em;
+    height: 0;
+    width: 50vw;
+    content: '';
+    border-top: 5px solid #00ace9;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+}
+
+h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
 
 
 a {
@@ -143,8 +172,8 @@ nav ul {
     animation: fade_move_up 4s ease-in-out infinite;
 }
 
-.bundle-scroll-up{
-display: inline;
+.bundle-scroll-up {
+    display: inline;
 }
 
 

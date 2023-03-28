@@ -63,6 +63,10 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function allFunctionsOnScroll() {
+  scrollFunction();
+}
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.utils.toArray(".panel").forEach((panel, i) => {

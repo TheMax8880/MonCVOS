@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
 
-html {
-    font-family: 'Raleway', sans-serif; 
-} 
-
-
 /* =================== PC : GENERAL =================== */
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,23 +13,58 @@ html {
 html {
     font-family: 'Raleway', sans-serif;
     font-stretch: expanded;
+    background-color: #000;
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
     color: #ddd;
 }
 
-
 header {
-    height: 80vh;    
-    display: flex;
-    align-items: center;
+    height: 100vh;
 }
 
-
 h2 {
-    font-size: 14rem;
+    font-size: 25rem;
     font-weight: 700;
-    line-height: 1.2;
+    margin: 0 3rem 0 3rem;
     text-align: center;
+}
+
+h2:before {
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    height: 0;
+    width: 50vw;
+    content: '';
+    border-top: 5px solid #00ace9;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+h2:hover::before{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+h2:after {
+    position: absolute;
+    right: 0;
+    top: 1.5em;
+    height: 0;
+    width: 50vw;
+    content: '';
+    border-top: 5px solid #00ace9;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+}
+
+h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+p {
+    font-size: 10rem;
 }
 
 a {
@@ -63,109 +96,20 @@ nav ul {
     font-size: 1.4rem;
 }
 
-
-
-
-
-/* ----------------------- GALLERY - Desktop ------------------------ */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    font-size: 3rem;
-    /* border-bottom: 1px dotted black; */
-  }
-
-span.tooltiptext {
-    visibility: hidden;
-    width: 50vw;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    padding: 1rem;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-  }
-
-  div.column1 span.tooltiptext {
-    background-color: #00ace9;
-    top: 20vh;
-    left: 100%; 
-  }
-  div.column2 span.tooltiptext {
-    background-color: #00ace9;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-  }
-  div.column3 span.tooltiptext {
-    background-color: #00ace9;
-    top: 10vh;
-    right: 100%; 
-  }
-
-  span.tooltip-title {
-    text-decoration: underline;
-    font-weight: 700;
-    font-size: 5rem;
-  }
-
-
-  .tooltip:hover span.tooltiptext {
-    visibility: visible;
-  }
-
-
-  #tool-and-skills-tab {
+#linkedin-contact{
     display: flex;
     flex-direction: column;
-    background-color: #0f0c29;
-}
-
-.row {
-    display: flex;
-   
-}
-
-/* Create 3 equal columns that sits next to each other */
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex: calc(100%/3);
-    max-width: calc(100%/3);
-    padding: 0 4px;
+    justify-content: space-evenly;
+    height: 90vh;
 }
 
-
-
-div.column img {
-    visibility: hidden;
-    margin: 30px;
-    width: 20vw;
+#linkedin-contact img {
+    width: 80vw;
     height: auto;
-}
-
-div.column img:hover {
-    transition-duration: 0.5s;
-    width: 23vw;
-}
-
-img.background-on {
-    background-color: #ffffff90;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* =================== PC : CANVAS =================== */
-#myCanvasContainer {
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    left: 0;
+    background-color: #ffffff80;
+    border-radius: 20px;
+    padding: 2%;
 }
 
 /* =================== PC : BOUTON BACK TO TOP =================== */
@@ -228,8 +172,8 @@ img.background-on {
     animation: fade_move_up 4s ease-in-out infinite;
 }
 
-.bundle-scroll-up{
-display: inline;
+.bundle-scroll-up {
+    display: inline;
 }
 
 

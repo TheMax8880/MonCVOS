@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Fichier styles css -->
-    <link rel="stylesheet" href="assets/css/style-hobbies.css">
+    <link rel="stylesheet" href="assets/css/style-contact.css">
 
     <title>Maxime Trouvillers - UI Designer V2</title>
 </head>
@@ -33,28 +33,30 @@
             </ul>
         </nav>
 
-        <header id="header-hobbies" class="panel" aria-label="Menu principal">
+        <header id="header-contact" class="panel" aria-label="Menu principal">
             <div>
-                <h2 data-aos="fade-in" data-aos-delay="300">Loisirs</h2>
+                <h2 data-aos="fade-in" data-aos-delay="300">Contact</h2>
                 <div class="scroll-down"></div>
             </div>
         </header>
 
-             <section id="myCanvasContainer" class="panel">
-            <canvas width="1500" height="800" id="myCanvas">
-                <p>Anything in here will be replaced on browsers that support the canvas element</p>
-                <ul>
-                    <li class="tooltip tooltip-photo"><a href="#myCanvasContainer">Photographie</a></li>
-                    <li><a href="#myCanvasContainer">Course à pied</a></li>
-                    <li><a href="#myCanvasContainer">Natation</a></li>
-                    <li><a href="#myCanvasContainer">Cyclisme sur route</a></li>
-                    <li><a href="#myCanvasContainer">Informatique</a></li>
-                    <li><a href="#myCanvasContainer">Cuisine et Gastronomie</a></li>
-                    <li><a href="#myCanvasContainer">Voyages</a></li>
-                    <li><a href="#myCanvasContainer">Musique</a></li>
-                </ul>
-            </canvas>
+        <section id="linkedin-contact">
+            <p>Sur LinkedIn :</p>
+            <a href="https://www.linkedin.com/in/maxime-trouvillers/" target="_blank" rel="noopener noreferrer"><img src="/assets/img/linkedin-seeklogo.com.svg" alt=""></a>
         </section>
+
+        <form method="post" action="mail.php">
+            <label>Votre email</label>
+            <input type="email" name="email" required><br>
+            <label>Message</label>
+            <textarea name="message" required></textarea><br>
+            <input type="submit">
+        </form>
+
+
+        
+
+
 
 
 

@@ -83,26 +83,20 @@ section.panel {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5% 10% 0 10%;
+    padding-top: 5%;
 
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
     height: 100vh;
-    font-size: 10rem;
+    font-size: 12rem;
 }
 
-/* .sect1 {
-    background-color: indigo;
-} */
+
+
 .sect2 {
     flex-direction: column;
 }
 
-.sect2 .scroll-down {
-    width: 100px;
-    height: 100px;
-    left: 47%;
-    bottom: 10%;
-}
+
 
 .sect3 .scroll-up {
     width: 100px;
@@ -120,19 +114,51 @@ section.panel {
     flex-direction: column;
 }
 
-.sect5 {
-    background-color: hotpink;
-}
-
-.sect6 {
-    background-color: darkolivegreen;
-}
-
 
 .panel p {
-    font-size: 7rem;
     text-align: center;
 }
+
+.sect1 p,
+.sect4 p,
+.sect5 p {
+    font-size: 10rem;
+}
+
+.sect2 p {
+    font-size: 8rem;
+}
+
+.sect3 p {
+    font-size: 7rem;
+}
+
+.sect6 p {
+    font-size: 9rem;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #00ace9;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ace9;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 /* =================== PC : CANVAS =================== */
 #myCanvasContainer {
@@ -202,8 +228,8 @@ section.panel {
     animation: fade_move_up 4s ease-in-out infinite;
 }
 
-.bundle-scroll-up{
-display: inline;
+.bundle-scroll-up {
+    display: inline;
 }
 
 
