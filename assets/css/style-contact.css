@@ -29,7 +29,7 @@ h2 {
     text-align: center;
 }
 
-h2:before {
+#header-contact h2:before {
     position: absolute;
     left: 0;
     top: 0.3em;
@@ -41,11 +41,11 @@ h2:before {
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
 }
-h2:hover::before{
+#header-contact h2:hover::before{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-h2:after {
+#header-contact h2:after {
     position: absolute;
     right: 0;
     top: 1.5em;
@@ -58,7 +58,7 @@ h2:after {
     transition: transform 0.5s ease-out;
 }
 
-h2:hover::after {
+#header-contact h2:hover::after {
     transform: scaleX(1);
     transform-origin: bottom right;
 }
@@ -96,7 +96,8 @@ nav ul {
     font-size: 1.4rem;
 }
 
-#linkedin-contact{
+#linkedin-contact,
+#mail-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +111,10 @@ nav ul {
     background-color: #ffffff80;
     border-radius: 20px;
     padding: 2%;
+}
+
+#mail-contact a {
+    font-size: 5rem;
 }
 
 /* =================== PC : BOUTON BACK TO TOP =================== */

@@ -12,6 +12,7 @@
 
 html {
     font-family: 'Raleway', sans-serif;
+    font-size: 100%;
     font-stretch: expanded;
     background-color: #000;
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
@@ -28,6 +29,8 @@ h2 {
     margin: 0 3rem 0 3rem;
     text-align: center;
 }
+
+
 
 h2:before {
     position: absolute;
@@ -93,19 +96,11 @@ nav ul {
     font-size: 1.4rem;
 }
 
-#helloWorld div:first-child {
-    height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
 
 
-/* =================== PC : CANVAS =================== */
-#myCanvasContainer {
+/* =================== PC : CANVAS (nuage de mots) =================== */
+#myCanvasContainer-hobbies {
     overflow: hidden;
     position: relative;
     top: 0;
@@ -301,7 +296,9 @@ nav ul {
     }
 }
 
-
+/* =================== MEDIA QUERY =================== */
+/* =================== MEDIA QUERY =================== */
+/* =================== MEDIA QUERY =================== */
 /* @media screen and (min-width: 1280px) and (max-width: 1600px){
 
 } */

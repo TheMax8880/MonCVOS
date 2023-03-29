@@ -16,7 +16,7 @@ html {
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
     color: #ddd;
 }
-header {
+#header-formation {
     height: 70vh;    
     display: flex;
     align-items: center;
@@ -178,8 +178,7 @@ h4 {
 
 #forms{
     margin-top: 50px;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
 }
 
 .modal {
