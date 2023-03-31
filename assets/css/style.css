@@ -992,6 +992,13 @@ img.background-on {
         left: unset;
     } */
 
+    .tooltip {
+        font-size: 4.8vw;
+    }
+    span.tooltip-title {
+        font-size: 6vw;
+    }
+
 
     #myCanvasContainer>p.show-on-mobile {
         display: block;
