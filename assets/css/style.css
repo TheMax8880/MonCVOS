@@ -16,47 +16,57 @@ html {
     font-size: 100%;
     background-color: #000;
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
-    color: #ddd;
+
+    color: #fff;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3vw;
     font-weight: 500;
-    margin: 0 3rem 0 3rem;
+    margin: 0 3vw 0 3vw;
 }
 
 /* =================== H2 =================== */
 
 h2{
     font-weight: 700;
-    margin: 0 3rem 0 3rem;
+    margin: 0 3vw 0 3vw;
+    color: transparent;
+    -webkit-text-stroke: 0.3vw #fff;
 }
 
 #helloWorld h2 {
-    font-size: 13rem;
+    font-size: 15vw;
     line-height: 2;
 }
 
-#header-hobbies h2,
-#header-contact h2 {
-    font-size: 25rem;
+#header-hobbies h2 {
+    font-size: 25vw;
     text-align: center;
 }
 
 #header-formation h2 {
-    font-size: 17rem;
+    font-size: 17vw;
     text-align: center;
+    
 }
 
 #header-pro-experiences h2 {
-    font-size: 11rem;
+    font-size: 11vw;
     line-height: 1.3;
     text-align: center;
+    -webkit-text-stroke: 0.1vw #fff;
 }
 
 #header-tools-skills h2 {
-    font-size: 14rem;
+    font-size: 13vw;
     line-height: 1.2;
+    text-align: center;
+    -webkit-text-stroke: 0.1vw #fff;
+}
+
+#header-contact h2 {
+    font-size: 24vw;
     text-align: center;
 }
 
@@ -73,13 +83,13 @@ h2:before {
 }
 
 #header-hobbies h2:before {
-    top: 0.3em;
+    top: 20vh;
 }
 #header-formation h2:before {
-    top: 0.7em;
+    top: 27vh;
 }
 #header-contact h2:before {
-    top: 0.3em;
+    top: 27vh;
 }
 
 h2:after {
@@ -88,20 +98,20 @@ h2:after {
     height: 0;
     width: 50vw;
     content: '';
-    border-top: 5px solid #00ace9;
+    border-bottom: 5px solid #00ace9;
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.5s ease-out;
 }
 
 #header-hobbies h2:after {
-    top: 1.5em;
+    top: 75vh;
 }
 #header-formation h2:after {
-    top: 2.1em;
+    top: 75vh;
 }
 #header-contact h2:after {
-    top: 1.5em;
+    top: 77vh;
 }
 
 
@@ -122,13 +132,15 @@ h2:after {
 
 
 
-
-
-
 /* =================== HEADER =================== */
-#header-hobbies,
-#header-contact {
+#header-hobbies {
     height: 100vh;
+}
+
+#header-contact {
+    height: 70vh;
+    display: flex;
+    align-items: center;
 }
 
 #header-formation,
@@ -144,13 +156,6 @@ h2:after {
     align-items: center;
 }
 
-#helloWorld p {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
 
 /* =================== HEADER accueil =================== */
 #helloWorld div:first-child {
@@ -178,12 +183,14 @@ a:hover {
 
 /* =================== Balise NAV =================== */
 nav {
-    height: 18vh;
+    height: 15vh;
     transition: 0.8s;
     padding: 3%;
     position: sticky;
     top: 0;
     z-index: 99;
+    backdrop-filter: blur(25px);
+    color: #fff;
 }
 
 nav ul {
@@ -191,12 +198,14 @@ nav ul {
     transition: 0.8s;
     justify-content: space-around;
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1.4vw;
+
 }
 
 #linkedin-contact,
 #mail-contact p{
-    font-size: 10rem;
+    margin-top: 10vh;
+    font-size: 10vw;
 }
 #linkedin-contact,
 #mail-contact {
@@ -216,7 +225,7 @@ nav ul {
 }
 
 #mail-contact a {
-    font-size: 5rem;
+    font-size: 5vw;
 }
 
 /* =================== Ligne SVG =================== */
@@ -244,12 +253,12 @@ svg#svg {
   }
   
   text.text0a{
-      font-size: 25px;
-      fill: #00ace9;
+      font-size: 5vw;
+      fill: #00ace980;
   }
   
   text.text0b{
-      font-size: 25px;
+      font-size: 2vw;
       fill: #ddd;
       display: block;
   }
@@ -281,6 +290,7 @@ svg#svg {
 #sect-formation{
     padding-left: 5%;
     padding-right: 5%;
+
 }
 
 #formations{
@@ -288,13 +298,13 @@ svg#svg {
     flex-direction: column;
 }
 
-h4 {
-    font-size: 4rem;
-}
+/* h4 {
+    font-size: 4vw;
+    color: white;
+    -webkit-text-stroke: 0.3vw #00ace9;
+} */
 
-#list-cdui li{
-    font-size: 2rem;
-}
+
 
 #forms{
     margin-top: 50px;
@@ -303,16 +313,19 @@ h4 {
 
 .modal {
     display: none;
-    background: linear-gradient(to right, #0f0c29, #090979, #020024);
+    font-size: 2vw;
+    color: #222;
+    /* background: linear-gradient(to right, #0f0c29, #090979, #020024); */
+    background-color: #ddd;
     box-shadow: 0px 1px 12px #00ace9;
-    border-radius: 10px;
+    border-radius: 20vw;
     padding: 20px 30px;
     text-align: center;
-    width: 95%;
+    width: 65%;
     position: fixed;
     /* position de la fenetre au centre de l'écran */
-    left: 50%;
-    top: 50%;
+    left: 60%;
+    top: 52%;
     transform: translate(-50%, -50%);
     /* position au dessus des autres éléments de la page */
     z-index: 1;
@@ -358,7 +371,7 @@ h4 {
 #cmModal li,
 #cduiModal li {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     margin: 1%;
 }
 #cmModal ul,
@@ -367,15 +380,17 @@ h4 {
 }
 
 .modal p strong {
-    font-size: 1.5rem;
-    color: aqua;
+    font-size: 1.2vw;
+    color: #222;
 }
 
 .modal h4 {
     color: #00ace9;
-    font-size: 4rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    font-size: 4vw;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    color: transparent;
+    -webkit-text-stroke: 0.1vw #00ace9;
 }
 
 span.closeModal {
@@ -422,10 +437,9 @@ section.panel {
     justify-content: center;
     align-items: center;
     padding-top: 5%;
-
     background: linear-gradient(to right, #0f0c29, #090979, #020024);
     height: 100vh;
-    font-size: 12rem;
+    font-size: 15vw;
 }
 
 .sect2 {
@@ -455,19 +469,23 @@ section.panel {
 .sect1 p,
 .sect4 p,
 .sect5 p {
-    font-size: 10rem;
+    font-size: 10vw;
 }
 
 .sect2 p {
-    font-size: 8rem;
+    font-size: 8vw;
 }
 
 .sect3 p {
-    font-size: 7rem;
+    font-size: 7vw;
 }
 
 .sect6 p {
-    font-size: 9rem;
+    font-size: 9vw;
+}
+
+.bundle-scroll-up {
+    display: inline;
 }
 .hover-underline-animation {
     display: inline-block;
@@ -497,7 +515,7 @@ section.panel {
 .tooltip {
     position: relative;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 2.8vw;
   }
 
 span.tooltiptext {
@@ -506,7 +524,7 @@ span.tooltiptext {
     background-color: black;
     color: #fff;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 1rem;
   
     /* Position the tooltip */
@@ -521,7 +539,7 @@ span.tooltiptext {
   }
   div.column2 span.tooltiptext {
     background-color: #00ace9;
-    bottom: 100%;
+    bottom: 50%;
     left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   }
@@ -534,7 +552,7 @@ span.tooltiptext {
   span.tooltip-title {
     text-decoration: underline;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4vw;
   }
 
 
@@ -654,9 +672,7 @@ img.background-on {
     animation: fade_move_up 4s ease-in-out infinite;
 }
 
-.bundle-scroll-up {
-    display: inline;
-}
+
 
 
 /*animated scroll arrow animation*/
@@ -783,19 +799,186 @@ img.background-on {
     }
 }
 
+/* =================== MENU NAVBARRE =================== */
+  
+  .menu > li {
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 20vw;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: #ffffff00;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
 
-/* @media screen and (min-width: 1280px) and (max-width: 1600px){
+.show-on-mobile {
+    display: none;
+}
+
+
+
+/* @media screen and (min-width: 1601px) {
+    html{
+        font-size: 120%;
+    }
+} */
+
+/* @media screen and (max-width: 1280px) {
+    h2:after,
+    h2:before {
+        border-top: none;
+    }
+} */
+
+/* @media screen and (min-width: 768px) and (max-width: 1280px){
+    html{
+        font-size: 75%;
+    }
+
 
 } */
-@media screen and (min-width: 1601px) {
-    html{
-        font-size: 110%;
-    }
-
-}
-
 @media screen and (max-width: 768px) {
-    #myCanvasContainer {
+
+    /* #myCanvasContainer {
         position: unset;
+    } */
+    .show-on-mobile {
+        display: unset;
     }
-}
+
+    .tooltiptext,
+    .no-show-on-mobile {display: none;}
+
+    #myCanvasContainer > p.show-on-mobile {
+        display: block;
+        position: absolute;
+        z-index: 99;
+        top: 5vh;
+        right: 20vw;
+        color: #00ace9;
+        font-size: 4vw;
+        animation: wiggle 2s linear infinite;
+    }
+    /* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+
+    #helloWorld div:first-child {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .menu a {
+        font-size: 5vw;
+        color: #00ace9;
+    }
+
+    .menu-button-container {
+        display: flex;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 12vh;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      #menu-toggle:checked ~ .menu li {
+        border: 1px solid #333;
+        height: 10em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        /* color: palevioletred; */
+        background-color: #222;
+      }
+      .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+      }
+    }

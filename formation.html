@@ -21,8 +21,12 @@
     <main>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 
-        <nav id="side-bar" role="navigation" aria-label="Menu principal" data-aos="fade-down">
-            <ul>
+        <nav id="side-bar" class="top-nav" role="navigation" aria-label="Menu principal" data-aos="fade-down">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
                 <li><a href="index.html">Qui suis-je&nbsp;?</a></li>
                 <li><a href="formation.html">Formations</a></li>
                 <li><a href="tools-skills.html">Outils et compétences</a></li>
@@ -43,19 +47,19 @@
 
             <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1300">
                 
-                <text class="text01 text0a" x="400" y="230">2022 - 2023</text>
-                <text class="text01 text0b" x="780" y="235">Concepteur Designer UI</text>
-                <text class="text01" x="410" y="280">clic sur les dates pour + d'infos</text>
+                <text class="text01 text0a" x="710" y="252">2022 - 2023</text>
+                <text class="text01 text0b" x="780" y="270">Concepteur Designer UI</text>
+                <text class="text01" x="510" y="310">clic pour + d'infos</text>
 
-                <text class="text02 text0a" x="510" y="480">2022</text>
-                <text class="text02 text0b" x="760" y="480">Community Manager</text>
+                <text class="text02 text0a" x="569" y="500">2022</text>
+                <text class="text02 text0b" x="760" y="520">Community Manager</text>
 
-                <text class="text03 text0a" x="510" y="735">2020</text>
-                <text class="text03 text0b" x="725" y="735">CAP Boulanger</text>
+                <text class="text03 text0a" x="569" y="745">2020</text>
+                <text class="text03 text0b" x="720" y="765">CAP Boulanger</text>
 
-                <text class="text04 text0a" x="510" y="980">2014</text>
-                <text class="text04 text0b" x="740" y="980">Diplôme Ingénieur</text>
-                <text class="text04 text0b" x="790" y="1050">des Systèmes Mécaniques</text>
+                <text class="text04 text0a" x="569" y="1010">2014</text>
+                <text class="text04 text0b" x="740" y="1028">Diplôme Ingénieur</text>
+                <text class="text04 text0b" x="800" y="1100">des Systèmes Mécaniques</text>
 
                 <path class="theLine" d="M121.5,89.5c68,68,124,207,64,305s-125,214-27,329s123,259,23,420s-87,304,8,397"
                     fill="none" stroke="white" stroke-width="10px" />

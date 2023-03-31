@@ -21,8 +21,12 @@
     <main>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 
-        <nav id="side-bar" role="navigation" aria-label="Menu principal" data-aos="fade-down">
-            <ul>
+        <nav id="side-bar" class="top-nav" role="navigation" aria-label="Menu principal" data-aos="fade-down">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
                 <li><a href="index.html">Qui suis-je&nbsp;?</a></li>
                 <li><a href="formation.html">Formations</a></li>
                 <li><a href="tools-skills.html">Outils et compétences</a></li>
@@ -36,7 +40,7 @@
 
         <header id="helloWorld" class="panel" aria-label="Menu principal">
             <div>
-                <h1 data-aos="fade-in" data-aos-delay="150"> Maxime Trouvillers</h1>
+                <h1 data-aos="fade-in" data-aos-delay="150"><span class="show-on-mobile">Je suis</span> Maxime Trouvillers</h1>
                 <div>
                     <h2 data-aos="fade-in" data-aos-delay="300">Bonjour&nbsp;!</h2>
                     <div class="scroll-down"></div>
@@ -45,7 +49,7 @@
         </header>
 
         <section class="panel sect1" data-aos="fade-in" data-aos-delay="150">
-            <p>Bienvenue sur mon <span class="hover-underline-animation">CV numérique</span> !</p>
+            <p>Bienvenue sur mon <span class="hover-underline-animation">CV numérique</span>&nbsp;!</p>
 
         </section>
 
@@ -56,15 +60,14 @@
         <section class="panel sect3" data-aos="fade-in" data-aos-delay="150">
             <div class="bundle-scroll-up">
                 <div class="scroll-up"></div>
-                <div class="scroll-up"></div>
-                <div class="scroll-up"></div>
+                <div class="scroll-up no-show-on-mobile"></div>
+                <div class="scroll-up no-show-on-mobile"></div>
             </div>
             <p>Ou accédez directement aux catégories via le menu.</p>
         </section>
         <section class="panel sect4" data-aos="fade-in" data-aos-delay="150">
             <p>Vous êtes prêts&nbsp;?&nbsp;</p>
             <p>C'est parti&nbsp;!</p>
-
         </section>
         <section class="panel sect5" data-aos="fade-in" data-aos-delay="150">
             <p>Je suis <span class="hover-underline-animation">UI & Motion Designer Junior</span></p>
@@ -77,7 +80,9 @@
 
 
         <section id="myCanvasContainer" class="panel">
-            <canvas width="2000" height="700" id="myCanvas">
+
+            <p class="show-on-mobile">Balayer pour tourner</p>
+            <canvas width="2000" height="1000" id="myCanvas">
                 <p>Anything in here will be replaced on browsers that support the canvas element</p>
                 <ul>
                     <li><a href="#sect-who-am-i">Qui suis-je&nbsp;?</a></li>

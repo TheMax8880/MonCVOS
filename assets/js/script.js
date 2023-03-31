@@ -1,4 +1,4 @@
-
+let brkScreen=1200;
 
 window.onload = function () {
     try {
@@ -8,10 +8,17 @@ window.onload = function () {
         TagCanvas.outlineColour = '#00ace9';
         // police utilisée
         TagCanvas.textFont= 'Raleway, sans-serif';
+        if (window.screen.width > brkScreen){
         // taille du texte
-        TagCanvas.textHeight=60;
+        TagCanvas.textHeight=70;
         // etirement horizontale
         TagCanvas.stretchX=2;
+        } else {
+          TagCanvas.textHeight=30
+          TagCanvas.stretchX=0.7;
+          TagCanvas.dragControl =true;
+          TagCanvas.maxSpeed=0.01;
+        }
         // Set to true to decelerate when highlighted tags freeze instead of stopping suddenly.
         TagCanvas.freezeDecel=true;
         // Set to true to pause movement when a tag is highlighted.
@@ -34,13 +41,21 @@ window.onload = function () {
     }
 };
 
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+if (window.screen.width > brkScreen){
+  window.onscroll = function() {scrollFunction()};
+}
 
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.querySelector('nav').style.padding = '1%';
+      document.querySelector('nav').style.padding = '2%';
       document.querySelector('nav').style.height = '10vh';
       document.querySelector('nav ul').style.fontSize = '1rem';
       document.getElementById("myBtn").style.display = "block";
@@ -53,6 +68,18 @@ function scrollFunction() {
     }
 }
 
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function allFunctionsOnScroll() {
+  scrollFunction();
+}
+
+
+
 
   
   
@@ -63,9 +90,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function allFunctionsOnScroll() {
-  scrollFunction();
-}
+
 
 gsap.registerPlugin(ScrollTrigger);
 
