@@ -144,7 +144,7 @@ h2:after {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 #header-contact {
@@ -174,13 +174,18 @@ h2:after {
 
 
 /* =================== HEADER accueil =================== */
+#helloWorld {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #helloWorld div:first-child {
     height: 80vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 
