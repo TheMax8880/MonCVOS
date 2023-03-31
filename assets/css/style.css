@@ -977,7 +977,8 @@ img.background-on {
         font-size: 5vw;
         -webkit-text-stroke: 0.2vw #090979
     }
-    .scroll-down {
+    
+    header#helloWorld.panel div div.scroll-down {
         left: unset;
     }
 
