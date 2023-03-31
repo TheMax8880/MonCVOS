@@ -40,6 +40,8 @@ h2 {
     line-height: 2;
 }
 
+
+
 #header-hobbies h2 {
     font-size: 25vw;
     text-align: center;
@@ -467,14 +469,13 @@ button.closeModal {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: #ddd;
     color: #222;
     border: 2px solid #00ace9;
     border-radius: 20px;
-    margin: 3% 0 3% 0;
+    margin: 5% 0 3% 0;
 }
 
 button.closeModal:hover {
@@ -795,7 +796,6 @@ img.background-on {
     border-bottom: 2px solid gray;
     border-right: 2px solid gray;
     z-index: 9;
-    left: 50%;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -moz-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);
@@ -977,7 +977,9 @@ img.background-on {
         font-size: 5vw;
         -webkit-text-stroke: 0.2vw #090979
     }
-
+    .scroll-down {
+        left: unset;
+    }
 
 
     #myCanvasContainer>p.show-on-mobile {
