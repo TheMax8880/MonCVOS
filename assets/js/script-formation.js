@@ -46,8 +46,6 @@ function allFunctionsOnScroll() {
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
 gsap.defaults({ease: "none"});
 
-
-
 const pulses = gsap.timeline({
   defaults: {
     duration: 0.05, 
@@ -123,7 +121,31 @@ item.addEventListener('click', closeModal));
 
 function closeModal(){
 document.querySelectorAll('.modal').forEach(item =>item.style.display = 'none');
+}
 
+let coordX=350;
+let coordY=250;
+if (window.screen.width < brkScreen){
+  current01.setAttribute('x',coordX);
+  prevSiblings01.setAttribute('x',coordX);
+  prevSiblings01.nextElementSibling.setAttribute('x',coordX);
+
+  current02.setAttribute('x',coordX);
+  prevSiblings02.setAttribute('x',coordX);
+
+  current03.setAttribute('x',coordX);
+  prevSiblings03.setAttribute('x',coordX);
+
+  current04.setAttribute('x',coordX);
+  prevSiblings04.setAttribute('x',coordX);
+
+
+  // let listAtt=textAt01.getAttributeNames();
+  // let valeurX=textAt01.getAttribute(listAtt[1]);
+  valeurX=document.querySelector('.ball');
+  // console.log(listAtt);
+  // console.log(listAtt[1]);//renvoi x
+  console.log(valeurX);
 }
 
 
