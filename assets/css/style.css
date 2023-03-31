@@ -958,10 +958,25 @@ img.background-on {
     text.text0a {
         font-size: 12vw;
     }
-    
+
     text.text0b {
-        font-size: 4vw;
+        font-size: 5vw;
     }
+
+    #cmModal li,
+    #cduiModal li {
+        font-size: 2.5vw;
+    }
+
+    .modal p strong {
+        font-size: 2.5vw;
+    }
+
+    .modal h4 {
+        font-size: 5vw;
+    }
+
+
 
     #myCanvasContainer>p.show-on-mobile {
         display: block;

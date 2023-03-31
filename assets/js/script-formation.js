@@ -123,8 +123,8 @@ function closeModal(){
 document.querySelectorAll('.modal').forEach(item =>item.style.display = 'none');
 }
 
-let coordX=350;
-let coordY=270;
+let coordX=380;
+let coordY=260;
 if (window.screen.width < brkScreen){
   document.querySelector('svg').setAttribute('viewBox','0 0 800 1300')
 
@@ -133,18 +133,28 @@ if (window.screen.width < brkScreen){
   prevSiblings01.nextElementSibling.setAttribute('x',coordX);
 
   current01.setAttribute('y',coordY);
-  prevSiblings01.setAttribute('y',coordY);
-  prevSiblings01.nextElementSibling.setAttribute('y',coordY);
+  prevSiblings01.setAttribute('y',coordY+10);
+  prevSiblings01.nextElementSibling.setAttribute('y',coordY+40);
 
   current02.setAttribute('x',coordX);
   prevSiblings02.setAttribute('x',coordX);
 
+  current02.setAttribute('y',coordY+250);
+  prevSiblings02.setAttribute('y',coordY+260);
+
   current03.setAttribute('x',coordX);
   prevSiblings03.setAttribute('x',coordX);
 
+  current03.setAttribute('y',coordY+500);
+  prevSiblings03.setAttribute('y',coordY+510);
+
   current04.setAttribute('x',coordX);
-  prevSiblings04.setAttribute('x',coordX);
-  prevSiblings04.nextElementSibling.setAttribute('x',coordX);
+  prevSiblings04.setAttribute('x',coordX+20);
+  prevSiblings04.nextElementSibling.setAttribute('x',coordX+50);
+
+  current04.setAttribute('y',coordY+750);
+  prevSiblings04.setAttribute('y',coordY+760);
+  prevSiblings04.nextElementSibling.setAttribute('y',coordY+820);
 
 
   // let listAtt=textAt01.getAttributeNames();
