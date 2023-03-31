@@ -961,7 +961,7 @@ img.background-on {
         font-size: 5vw;
     }
 
-    .tooltiptext,
+    /* .tooltiptext, */
     .no-show-on-mobile {
         display: none;
     }
