@@ -167,6 +167,8 @@ h2:after {
 #header-tools-skills {
     height: 80vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
