@@ -124,11 +124,17 @@ document.querySelectorAll('.modal').forEach(item =>item.style.display = 'none');
 }
 
 let coordX=350;
-let coordY=250;
+let coordY=270;
 if (window.screen.width < brkScreen){
+  document.querySelector('svg').setAttribute('viewBox','0 0 800 1300')
+
   current01.setAttribute('x',coordX);
   prevSiblings01.setAttribute('x',coordX);
   prevSiblings01.nextElementSibling.setAttribute('x',coordX);
+
+  current01.setAttribute('y',coordY);
+  prevSiblings01.setAttribute('y',coordY);
+  prevSiblings01.nextElementSibling.setAttribute('y',coordY);
 
   current02.setAttribute('x',coordX);
   prevSiblings02.setAttribute('x',coordX);
@@ -138,6 +144,7 @@ if (window.screen.width < brkScreen){
 
   current04.setAttribute('x',coordX);
   prevSiblings04.setAttribute('x',coordX);
+  prevSiblings04.nextElementSibling.setAttribute('x',coordX);
 
 
   // let listAtt=textAt01.getAttributeNames();
