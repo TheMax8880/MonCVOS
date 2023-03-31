@@ -87,8 +87,6 @@ let PrevSiblings04 = Current04.nextElementSibling;
 
 
 
-
-
 Current01.addEventListener('click', function () {
   document.getElementById('cduiModal').style.display = 'block';
 });
@@ -110,7 +108,7 @@ PrevSiblings03.addEventListener('click', function () {
 Current04.addEventListener('click', function () {
   document.getElementById('ingModal').style.display = 'block';
 });
-formPrevSiblings04.addEventListener('click', function () {
+PrevSiblings04.addEventListener('click', function () {
   document.getElementById('ingModal').style.display = 'block';
 });
 
@@ -126,13 +124,13 @@ function closeModal(){
 document.querySelectorAll('.modal').forEach(item =>item.style.display = 'none');
 }
 
-let coordX=380;
+let coordX=410;
 let coordY=260;
 if (window.screen.width < brkScreen){
   document.querySelector('svg').setAttribute('viewBox','0 0 800 1300')
 
   Current01.setAttribute('x',coordX);
-  PrevSiblings01.setAttribute('x',coordX+10);
+  PrevSiblings01.setAttribute('x',coordX+50);
   PrevSiblings01.nextElementSibling.setAttribute('x',coordX);
 
   Current01.setAttribute('y',coordY);
@@ -140,25 +138,24 @@ if (window.screen.width < brkScreen){
   PrevSiblings01.nextElementSibling.setAttribute('y',coordY+40);
 
   Current02.setAttribute('x',coordX);
-  PrevSiblings02.setAttribute('x',coordX);
+  PrevSiblings02.setAttribute('x',coordX+40);
 
   Current02.setAttribute('y',coordY+250);
   PrevSiblings02.setAttribute('y',coordY+260);
 
   Current03.setAttribute('x',coordX);
-  PrevSiblings03.setAttribute('x',coordX-20);
+  PrevSiblings03.setAttribute('x',coordX);
 
   Current03.setAttribute('y',coordY+500);
   PrevSiblings03.setAttribute('y',coordY+510);
 
-  Current04.setAttribute('x',coordX);
-  PrevSiblings04.setAttribute('x',coordX);
+  Current04.setAttribute('x',coordX+20);
+  PrevSiblings04.setAttribute('x',coordX+40);
   PrevSiblings04.nextElementSibling.setAttribute('x',coordX+35);
 
   Current04.setAttribute('y',coordY+750);
   PrevSiblings04.setAttribute('y',coordY+760);
   PrevSiblings04.nextElementSibling.setAttribute('y',coordY+820);
-
 
 
 }

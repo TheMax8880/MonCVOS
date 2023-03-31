@@ -318,10 +318,10 @@ text.text01:nth-child(3) {
 /* =================== Formations et exp pro =================== */
 
 
-#sect-formation {
+#sect-formation,
+#sect-pro-exp {
     padding-left: 5%;
     padding-right: 5%;
-
 }
 
 #formations {
@@ -610,7 +610,6 @@ span.tooltip-title {
     font-weight: 700;
     font-size: 4vw;
 }
-
 
 .tooltip:hover span.tooltiptext {
     visibility: visible;
@@ -937,6 +936,8 @@ img.background-on {
 
 
 } */
+
+
 @media screen and (max-width: 768px) {
 
     /* #myCanvasContainer {
@@ -965,15 +966,16 @@ img.background-on {
 
     #cmModal li,
     #cduiModal li {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     .modal p strong {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     .modal h4 {
         font-size: 5vw;
+        -webkit-text-stroke: 0.3vw #090979
     }
 
 
