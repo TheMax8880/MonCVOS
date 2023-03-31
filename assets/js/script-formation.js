@@ -110,7 +110,7 @@ PrevSiblings03.addEventListener('click', function () {
 Current04.addEventListener('click', function () {
   document.getElementById('ingModal').style.display = 'block';
 });
-formPrevSiblings04.addEventListener('click', function () {
+PrevSiblings04.addEventListener('click', function () {
   document.getElementById('ingModal').style.display = 'block';
 });
 
