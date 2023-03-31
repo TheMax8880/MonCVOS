@@ -28,7 +28,7 @@ h1 {
 
 /* =================== H2 =================== */
 
-h2{
+h2 {
     font-weight: 700;
     margin: 0 3vw 0 3vw;
     color: transparent;
@@ -48,7 +48,7 @@ h2{
 #header-formation h2 {
     font-size: 17vw;
     text-align: center;
-    
+
 }
 
 #header-pro-experiences h2 {
@@ -85,9 +85,11 @@ h2:before {
 #header-hobbies h2:before {
     top: 20vh;
 }
+
 #header-formation h2:before {
     top: 27vh;
 }
+
 #header-contact h2:before {
     top: 27vh;
 }
@@ -107,9 +109,11 @@ h2:after {
 #header-hobbies h2:after {
     top: 75vh;
 }
+
 #header-formation h2:after {
     top: 75vh;
 }
+
 #header-contact h2:after {
     top: 77vh;
 }
@@ -145,13 +149,13 @@ h2:after {
 
 #header-formation,
 #header-pro-experiences {
-    height: 70vh;    
+    height: 70vh;
     display: flex;
     align-items: center;
 }
 
 #header-tools-skills {
-    height: 80vh;    
+    height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -203,10 +207,11 @@ nav ul {
 }
 
 #linkedin-contact,
-#mail-contact p{
+#mail-contact p {
     margin-top: 10vh;
     font-size: 10vw;
 }
+
 #linkedin-contact,
 #mail-contact {
     display: flex;
@@ -233,67 +238,93 @@ svg#svg {
     max-width: 600px;
     overflow: visible;
     margin-top: 60vh;
-  }
-  
-  .ball {
+}
+
+.ball {
     fill: white;
     visibility: hidden;
-  }
-  
-  .line {
+}
+
+.line {
     fill: none;
     stroke: white;
     stroke-width: 2px;
-  }
-  text {
+}
+
+text {
     fill: white;
     font-size: 15px;
-  
+
     visibility: hidden;
-  }
-  
-  text.text0a{
-      font-size: 5vw;
-      fill: #00ace980;
-  }
-  
-  text.text0b{
-      font-size: 2vw;
-      fill: #ddd;
-      display: block;
-  }
-  text.text01:nth-child(3) {
-      font-size: 10px;
-      fill: #ddd;
-      display: block;
-      visibility: hidden;
-      -webkit-animation: fade 2s ease-in-out infinite;
-      -moz-animation: fade 2s ease-in-out infinite;
-      animation: fade 2s ease-in-out infinite;
-  }
-  @keyframes fade {
-      0%,100% { opacity: 0 }
-      50% { opacity: 0.5 }
+}
+
+text.text0a {
+    font-size: 5vw;
+    fill: #00ace980;
+}
+
+text.text0b {
+    font-size: 2vw;
+    fill: #ddd;
+    display: block;
+}
+
+text.text01:nth-child(3) {
+    font-size: 10px;
+    fill: #ddd;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: fade 2s ease-in-out infinite;
+    -moz-animation: fade 2s ease-in-out infinite;
+    animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0
     }
-    @-webkit-keyframes fade {
-      0%,100% { opacity: 0 }
-      50% { opacity: 0.5 }
+
+    50% {
+        opacity: 0.5
     }
-    @-moz-keyframes fade {
-      0%,100% { opacity: 0 }
-      50% { opacity: 0.5 }
+}
+
+@-webkit-keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0
     }
+
+    50% {
+        opacity: 0.5
+    }
+}
+
+@-moz-keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 0.5
+    }
+}
 
 /* =================== Formations et exp pro =================== */
 
 
-#sect-formation{
+#sect-formation {
     padding-left: 5%;
     padding-right: 5%;
 
 }
 
-#formations{
+#formations {
     display: flex;
     flex-direction: column;
 }
@@ -306,9 +337,9 @@ svg#svg {
 
 
 
-#forms{
+#forms {
     margin-top: 50px;
-    margin-bottom: 50px;  
+    margin-bottom: 50px;
 }
 
 .modal {
@@ -329,44 +360,62 @@ svg#svg {
     transform: translate(-50%, -50%);
     /* position au dessus des autres éléments de la page */
     z-index: 1;
-    animation: fadeinmodal 1s; 
-    -moz-animation: fadeinmodal 1s; /* Firefox */
-    -webkit-animation: fadeinmodal 1s; /* Safari et Chrome */
-    -o-animation: fadeinmodal 1s; /* Opera */
+    animation: fadeinmodal 1s;
+    -moz-animation: fadeinmodal 1s;
+    /* Firefox */
+    -webkit-animation: fadeinmodal 1s;
+    /* Safari et Chrome */
+    -o-animation: fadeinmodal 1s;
+    /* Opera */
 
 }
+
 @keyframes fadeinmodal {
     from {
-        opacity:0;
+        opacity: 0;
     }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadeinmodal { /* sur Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadeinmodal { /* sur Safari et Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadeinmodal { /* sur Opera */
-    from {
-        opacity:0;
-    }
+
     to {
         opacity: 1;
     }
 }
+
+@-moz-keyframes fadeinmodal {
+
+    /* sur Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeinmodal {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeinmodal {
+
+    /* sur Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* =================== MODAL =================== */
 #cmModal li,
 #cduiModal li {
@@ -374,6 +423,7 @@ svg#svg {
     font-size: 1.2vw;
     margin: 1%;
 }
+
 #cmModal ul,
 #cduiModal ul {
     margin: 3%;
@@ -402,12 +452,14 @@ span.closeModal {
     cursor: default;
 }
 
-div.spacer{
+div.spacer {
     height: 40vh;
 }
+
 button.closeModal {
-    background-color: #00ace9; /* Green */
-    font-family: 'Raleway', sans-serif; 
+    background-color: #00ace9;
+    /* Green */
+    font-family: 'Raleway', sans-serif;
     border: none;
     color: #ddd;
     padding: 16px 32px;
@@ -418,19 +470,19 @@ button.closeModal {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: #ddd; 
-    color: #222; 
+    background-color: #ddd;
+    color: #222;
     border: 2px solid #00ace9;
     border-radius: 20px;
     margin: 3% 0 3% 0;
-  }
-  
-  button.closeModal:hover {
+}
+
+button.closeModal:hover {
     background-color: #00ace9;
     color: #ddd;
-  }
+}
 
-/* =================== PANEL =================== */    
+/* =================== PANEL =================== */
 
 section.panel {
     display: flex;
@@ -487,12 +539,13 @@ section.panel {
 .bundle-scroll-up {
     display: inline;
 }
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
     color: #00ace9;
 }
-  
+
 .hover-underline-animation::after {
     content: '';
     position: absolute;
@@ -505,7 +558,7 @@ section.panel {
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
 }
-  
+
 .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -516,7 +569,7 @@ section.panel {
     position: relative;
     display: inline-block;
     font-size: 2.8vw;
-  }
+}
 
 span.tooltiptext {
     visibility: hidden;
@@ -526,42 +579,45 @@ span.tooltiptext {
     text-align: center;
     border-radius: 50px;
     padding: 1rem;
-  
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-  }
+}
 
-  div.column1 span.tooltiptext {
+div.column1 span.tooltiptext {
     background-color: #00ace9;
     top: 20vh;
-    left: 100%; 
-  }
-  div.column2 span.tooltiptext {
+    left: 100%;
+}
+
+div.column2 span.tooltiptext {
     background-color: #00ace9;
     bottom: 50%;
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
-  }
-  div.column3 span.tooltiptext {
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+div.column3 span.tooltiptext {
     background-color: #00ace9;
     top: 10vh;
-    right: 100%; 
-  }
+    right: 100%;
+}
 
-  span.tooltip-title {
+span.tooltip-title {
     text-decoration: underline;
     font-weight: 700;
     font-size: 4vw;
-  }
+}
 
 
-  .tooltip:hover span.tooltiptext {
+.tooltip:hover span.tooltiptext {
     visibility: visible;
-  }
+}
 
 
-  #tool-and-skills-tab {
+#tool-and-skills-tab {
     display: flex;
     flex-direction: column;
     background-color: #0f0c29;
@@ -569,7 +625,7 @@ span.tooltiptext {
 
 .row {
     display: flex;
-   
+
 }
 
 /* Create 3 equal columns that sits next to each other */
@@ -800,12 +856,12 @@ img.background-on {
 }
 
 /* =================== MENU NAVBARRE =================== */
-  
-  .menu > li {
+
+.menu>li {
     overflow: hidden;
-  }
-  
-  .menu-button-container {
+}
+
+.menu-button-container {
     display: none;
     height: 100%;
     width: 20vw;
@@ -813,15 +869,15 @@ img.background-on {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  #menu-toggle {
+}
+
+#menu-toggle {
     display: none;
-  }
-  
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
     display: block;
     background-color: #fff;
     position: absolute;
@@ -829,31 +885,31 @@ img.background-on {
     width: 30px;
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-radius: 2px;
-  }
-  
-  .menu-button::before {
+}
+
+.menu-button::before {
     content: '';
     margin-top: -8px;
-  }
-  
-  .menu-button::after {
+}
+
+.menu-button::after {
     content: '';
     margin-top: 8px;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
     background: #ffffff00;
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
-  }
+}
 
 .show-on-mobile {
     display: none;
@@ -890,10 +946,16 @@ img.background-on {
         display: unset;
     }
 
-    .tooltiptext,
-    .no-show-on-mobile {display: none;}
+    h1 {
+        font-size: 5vw;
+    }
 
-    #myCanvasContainer > p.show-on-mobile {
+    .tooltiptext,
+    .no-show-on-mobile {
+        display: none;
+    }
+
+    #myCanvasContainer>p.show-on-mobile {
         display: block;
         position: absolute;
         z-index: 99;
@@ -903,30 +965,40 @@ img.background-on {
         font-size: 4vw;
         animation: wiggle 2s linear infinite;
     }
+
     /* Keyframes */
-@keyframes wiggle {
-    0%, 7% {
-      transform: rotateZ(0);
+    @keyframes wiggle {
+
+        0%,
+        7% {
+            transform: rotateZ(0);
+        }
+
+        15% {
+            transform: rotateZ(-15deg);
+        }
+
+        20% {
+            transform: rotateZ(10deg);
+        }
+
+        25% {
+            transform: rotateZ(-10deg);
+        }
+
+        30% {
+            transform: rotateZ(6deg);
+        }
+
+        35% {
+            transform: rotateZ(-4deg);
+        }
+
+        40%,
+        100% {
+            transform: rotateZ(0);
+        }
     }
-    15% {
-      transform: rotateZ(-15deg);
-    }
-    20% {
-      transform: rotateZ(10deg);
-    }
-    25% {
-      transform: rotateZ(-10deg);
-    }
-    30% {
-      transform: rotateZ(6deg);
-    }
-    35% {
-      transform: rotateZ(-4deg);
-    }
-    40%, 100% {
-      transform: rotateZ(0);
-    }
-  }
 
 
     #helloWorld div:first-child {
@@ -944,8 +1016,9 @@ img.background-on {
 
     .menu-button-container {
         display: flex;
-      }
-      .menu {
+    }
+
+    .menu {
         position: absolute;
         top: 0;
         margin-top: 12vh;
@@ -954,21 +1027,24 @@ img.background-on {
         width: 100%;
         justify-content: center;
         align-items: center;
-      }
-      #menu-toggle ~ .menu li {
+    }
+
+    #menu-toggle~.menu li {
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      #menu-toggle:checked ~ .menu li {
+    }
+
+    #menu-toggle:checked~.menu li {
         border: 1px solid #333;
         height: 10em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-      }
-      .menu > li {
+    }
+
+    .menu>li {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -977,8 +1053,9 @@ img.background-on {
         width: 100%;
         /* color: palevioletred; */
         background-color: #222;
-      }
-      .menu > li:not(:last-child) {
-        border-bottom: 1px solid #444;
-      }
     }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
