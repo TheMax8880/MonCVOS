@@ -969,10 +969,23 @@ img.background-on {
         font-size: 5vw;
     }
 
-    /* .tooltiptext, */
+
     .no-show-on-mobile,
     #myCanvasContainer-hobbies {
         display: none;
+    }
+
+    #header-hobbies h2:after,
+    #header-formation h2:after
+    #header-contact h2:after,   
+    #header-hobbies h2:before,
+    #header-formation h2:before,
+    #header-contact h2:before,
+    h2:before,
+    h2:after {
+        display: none;
+        display: unset;
+        visibility: hidden;
     }
 
     text.text0a {
