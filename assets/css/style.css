@@ -931,61 +931,29 @@ img.background-on {
     display: none;
 }
 
-
-
-/* @media screen and (min-width: 1601px) {
-    html{
-        font-size: 120%;
-    }
-} */
-
-/* @media screen and (max-width: 1280px) {
-    h2:after,
-    h2:before {
-        border-top: none;
-    }
-} */
-
-/* @media screen and (min-width: 768px) and (max-width: 1280px){
-    html{
-        font-size: 75%;
-    }
-
-
-} */
+/* =============== MEDIA QUERIES ====================== */
 
 
 @media screen and (max-width: 768px) {
 
-    /* #myCanvasContainer {
-        position: unset;
-    } */
+    .no-show-on-mobile,
+    #myCanvasContainer-hobbies,
+    #header-hobbies h2:hover::before,
+    #header-formation h2:hover::before,
+    #header-contact h2:hover::before,
+    #header-hobbies h2:hover::after,
+    #header-formation h2:hover::after,
+    #header-contact h2:hover::after {
+        display: none;
+    }
+
     .show-on-mobile,
     #sect-hobbies-mobile {
         display: unset;
     }
-
+    
     h1 {
         font-size: 5vw;
-    }
-
-
-    .no-show-on-mobile,
-    #myCanvasContainer-hobbies {
-        display: none;
-    }
-
-    #header-hobbies h2:after,
-    #header-formation h2:after
-    #header-contact h2:after,   
-    #header-hobbies h2:before,
-    #header-formation h2:before,
-    #header-contact h2:before,
-    h2:before,
-    h2:after {
-        display: none;
-        display: unset;
-        visibility: hidden;
     }
 
     text.text0a {
@@ -1009,24 +977,25 @@ img.background-on {
         font-size: 5vw;
         -webkit-text-stroke: 0.2vw #090979
     }
-    
-    /* header#helloWorld.panel div div.scroll-down {
-        left: unset;
-    } */
-    
 
     #sect-hobbies-mobile.gallery div.row div.column div.tooltip {
         font-size: 10vw;
-        margin: 115% 3vw 5% 3vw;
+        margin: 125% 3vw 5% 3vw;
     }
 
     #sect-hobbies-mobile.gallery div.row div.column div.tooltip span.tooltiptext {
         font-size: 4vw;
     }
 
+    #sect-hobbies-mobile.gallery div.row div.column div.tooltip:hover {
+        transition-duration: 0.5s;
+        font-size: 13vw;
+    }
+
     .tooltip {
         font-size: 4.8vw;
     }
+
     span.tooltip-title {
         font-size: 6vw;
     }
@@ -1035,7 +1004,7 @@ img.background-on {
         top: 5vh;
         left: 80%;
     }
-    
+
     div.column2 span.tooltiptext {
         background-color: #00ace9;
         bottom: 50%;
@@ -1043,13 +1012,12 @@ img.background-on {
         margin-left: -60px;
         /* Use half of the width (120/2 = 60), to center the tooltip */
     }
-    
+
     div.column3 span.tooltiptext {
         background-color: #00ace9;
         top: 8vh;
         right: 80%;
     }
-
 
     #myCanvasContainer>p.show-on-mobile {
         display: block;
@@ -1062,7 +1030,7 @@ img.background-on {
         animation: wiggle 2s linear infinite;
     }
 
-    /* Keyframes */
+    /* Keyframes WIGGLE */
     @keyframes wiggle {
 
         0%,
@@ -1095,7 +1063,6 @@ img.background-on {
             transform: rotateZ(0);
         }
     }
-
 
     #helloWorld div:first-child {
         flex-direction: column;
