@@ -49,6 +49,7 @@ h2 {
 
 #header-formation h2 {
     font-size: 17vw;
+    padding-top: 14vh;
     /* text-align: center; */
 
 }
@@ -93,7 +94,7 @@ h2:before {
 }
 
 #header-contact h2:before {
-    top: 27vh;
+    top: 25vh;
 }
 
 h2:after {
@@ -109,7 +110,7 @@ h2:after {
 }
 
 #header-hobbies h2:after {
-    top: 75vh;
+    top: 77vh;
 }
 
 #header-formation h2:after {
@@ -925,7 +926,8 @@ img.background-on {
     transform: rotate(-405deg);
 }
 
-.show-on-mobile {
+.show-on-mobile,
+#sect-hobbies-mobile {
     display: none;
 }
 
@@ -958,7 +960,8 @@ img.background-on {
     /* #myCanvasContainer {
         position: unset;
     } */
-    .show-on-mobile {
+    .show-on-mobile,
+    #sect-hobbies-mobile {
         display: unset;
     }
 
@@ -967,7 +970,8 @@ img.background-on {
     }
 
     /* .tooltiptext, */
-    .no-show-on-mobile {
+    .no-show-on-mobile,
+    #myCanvasContainer-hobbies {
         display: none;
     }
 
@@ -996,6 +1000,16 @@ img.background-on {
     /* header#helloWorld.panel div div.scroll-down {
         left: unset;
     } */
+    
+
+    #sect-hobbies-mobile.gallery div.row div.column div.tooltip {
+        font-size: 10vw;
+        margin: 115% 3vw 5% 3vw;
+    }
+
+    #sect-hobbies-mobile.gallery div.row div.column div.tooltip span.tooltiptext {
+        font-size: 4vw;
+    }
 
     .tooltip {
         font-size: 4.8vw;
