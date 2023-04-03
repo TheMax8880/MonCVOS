@@ -238,6 +238,9 @@ nav ul {
     justify-content: space-evenly;
     height: 90vh;
 }
+#mail-contact a {
+    font-size: 6vw;
+}
 
 #linkedin-contact img {
     width: 80vw;
@@ -247,9 +250,6 @@ nav ul {
     padding: 2%;
 }
 
-#mail-contact a {
-    font-size: 5vw;
-}
 
 /* =================== Ligne SVG =================== */
 svg#svg {
