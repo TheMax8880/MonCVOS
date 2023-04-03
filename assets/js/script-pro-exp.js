@@ -131,31 +131,31 @@ if (window.screen.width < brkScreen){
 
   Current01.setAttribute('x',coordX);
   PrevSiblings01.setAttribute('x',coordX+50);
-  PrevSiblings01.nextElementSibling.setAttribute('x',coordX);
+  PrevSiblings01.nextElementSibling.setAttribute('x',coordX+55);
 
   Current01.setAttribute('y',coordY);
-  PrevSiblings01.setAttribute('y',coordY+10);
-  PrevSiblings01.nextElementSibling.setAttribute('y',coordY+40);
+  PrevSiblings01.setAttribute('y',coordY+50);
+  PrevSiblings01.nextElementSibling.setAttribute('y',coordY+90);
 
   Current02.setAttribute('x',coordX);
   PrevSiblings02.setAttribute('x',coordX+40);
 
   Current02.setAttribute('y',coordY+250);
-  PrevSiblings02.setAttribute('y',coordY+260);
+  PrevSiblings02.setAttribute('y',coordY+300);
 
   Current03.setAttribute('x',coordX);
   PrevSiblings03.setAttribute('x',coordX);
 
   Current03.setAttribute('y',coordY+500);
-  PrevSiblings03.setAttribute('y',coordY+510);
+  PrevSiblings03.setAttribute('y',coordY+550);
 
   Current04.setAttribute('x',coordX+20);
   PrevSiblings04.setAttribute('x',coordX+40);
   PrevSiblings04.nextElementSibling.setAttribute('x',coordX+35);
 
   Current04.setAttribute('y',coordY+750);
-  PrevSiblings04.setAttribute('y',coordY+760);
-  PrevSiblings04.nextElementSibling.setAttribute('y',coordY+820);
+  PrevSiblings04.setAttribute('y',coordY+800);
+  // PrevSiblings04.nextElementSibling.setAttribute('y',coordY+820);
 
 
 }
